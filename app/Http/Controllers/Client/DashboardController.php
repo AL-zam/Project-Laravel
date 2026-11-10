@@ -1,3 +1,14 @@
 <?php
 
-// SIP-IB | PIC: Anggota 1 & 4 | Lingkup: Wajib | Isi implementasi oleh PIC
+namespace App\Http\Controllers\Client;
+
+use App\Http\Controllers\Controller;
+use Illuminate\View\View;
+
+class DashboardController extends Controller
+{
+    public function __invoke(): View
+    {
+        return view('client.dashboard.index');
+    }
+}
