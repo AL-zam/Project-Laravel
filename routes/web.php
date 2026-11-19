@@ -25,3 +25,5 @@ if (app()->environment(['local', 'testing'])) {
         })->where('key', '[a-z0-9-]+')->name('client.module');
     });
 }
+
+require __DIR__ . '/public-pages.php';
